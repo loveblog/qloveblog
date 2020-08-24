@@ -68,6 +68,10 @@ void Settings::on_settinSave_clicked()
     QString repo = this->ui->repo->text().trimmed();
     QString password = this->ui->password->text().trimmed();
     QString via = this->ui->via->text().trimmed();
+    repo = repo.replace("https://", "");
+    repo = repo.replace("http://", "");
+    repo = repo.replace("ssh://", "");
+    repo = repo.trimmed();
     QString dostr = "mkdir -p ~/.config/qloveblog/output ; rm -rf ~/.config/qloveblog/output ; git clone "+via+"://"+username+":"+password+"@"+repo+" ~/.config/qloveblog/output";
     string sdostr = q2s(dostr);
     QString res = s2q(getshell(sdostr))+"\nYour Repo is prepared.";
