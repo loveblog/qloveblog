@@ -67,7 +67,7 @@ $ qloveblog
 
 ![2](http://victorwoo.synology.me:516/img/qlb2.png)
 
-> :
+> Warning:
 > 
 > You cannot input `ssh://`, `https://` or `http://` in input box `git repo` on the dialog!!!
 > 
