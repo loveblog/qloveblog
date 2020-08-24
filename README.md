@@ -2,11 +2,11 @@
 
 Loveblog with QT.
 
-# Install
+# Install 安装
 
-## Application needs
+## Application needs 应用程序依赖
 
-- Qt5 : Download Qt5
+- Qt5 : Download Qt5 下载 QT5
 - git : 
   - Linux :
     - Arch/Arco/Manjaro : `# pacman -S git`
@@ -15,7 +15,7 @@ Loveblog with QT.
   - MacOS : Install on git-scm.com
   - Windows : Not service for windows.
 
-## Install QLB
+## Install QLB 安装QLB
 
 ```lansh
 $ git clone https://github.com/loveblog/qloveblog.git
@@ -23,9 +23,9 @@ $ cd qloveblog
 # bash install.sh
 ```
 
-## Enhanced plug-ins
+## Enhanced plug-ins 安装增强插件
 
-- For `ssh` : `x11-ssh-askpass`
+- For `ssh` : `x11-ssh-askpass` (If you want to use ssh-git in QLB)
   - Linux:
     - Arch/Arco/Manjaro : `# pacman -S x11-ssh-askpass`
     - Debian/Ubuntu : `# apt install x11-ssh-askpass`
@@ -34,11 +34,11 @@ $ cd qloveblog
   - Windows: Not service for windows.
 - For
 
-# Usage
+# Usage 使用
 
-## Start app
+## Start app 启动程序
 
-- Start with terminal.
+- Start with terminal. 使用命令行启动
 
 ```lansh
 $ qloveblog
@@ -46,18 +46,18 @@ $ qloveblog
 
 - Start with Applications Menu `QLoveBlog`
 
-## Set up repo
+## Set up repo 初始化 Repo
 
-### Make blog with GitHub
+### Make blog with GitHub 使用 GitHub 创建博客
 
 - Creat a user on GitHub
 - Creat a repo and named `username.github.io`
 
-### Make blog with your server
+### Make blog with your server 使用自己的服务器创建博客
 
 - Creat a git repo on your server
 
-### Then you have to do with client
+### Then you have to do with client 然后启动客户端
 
 - Start app and click `repo settings`
 
@@ -67,9 +67,11 @@ $ qloveblog
 
 ![2](http://victorwoo.synology.me:516/img/qlb2.png)
 
-> NOTICE:
+> :
 > 
 > You cannot input `ssh://`, `https://` or `http://` in input box `git repo` on the dialog!!!
+> 
+> We can parse them in version 1.0.2 上述警告可以在 1.0.2 中被解析，所以您不用担心。
 > 
 
 # Uninstall
