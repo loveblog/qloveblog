@@ -72,7 +72,13 @@ void Settings::on_settinSave_clicked()
     repo = repo.replace("http://", "");
     repo = repo.replace("ssh://", "");
     repo = repo.trimmed();
-    QString dostr = "mkdir -p ~/.config/qloveblog/output ; rm -rf ~/.config/qloveblog/output ; git clone "+via+"://"+username+":"+password+"@"+repo+" ~/.config/qloveblog/output";
+    QString dostr = "mkdir -p ~/.config/qloveblog/output ; rm -rf ~/.config/qloveblog/output ; ";
+    QString do2;
+    if (via.compare("https") == 0 || via.compare("http") == 0)
+        do2 = "git clone "+via+"://"+username+":"+password+"@"+repo+" ~/.config/qloveblog/output";
+    else
+        do2 = "git clone "+via+"://"+repo+" ~/.config/qloveblog/output";
+    dostr += do2;
     string sdostr = q2s(dostr);
     QString res = s2q(getshell(sdostr))+"\nYour Repo is prepared.";
 //    system (dostr);
