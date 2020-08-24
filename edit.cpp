@@ -215,6 +215,7 @@ void Edit::on_save_clicked()
     gfile.close();
 //    QMessageBox::information(NULL, "", tfile, QMessageBox::Ok);
     prepareinit();
+    this->hide();
 }
 
 void Edit::on_delete_2_clicked()

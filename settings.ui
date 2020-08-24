@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Settings - QLoveblog</string>
+   <string>Repo Settings - QLoveblog</string>
   </property>
   <widget class="QLineEdit" name="username">
    <property name="geometry">
@@ -94,14 +94,17 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>30</y>
-     <width>71</width>
-     <height>16</height>
+     <x>20</x>
+     <y>10</y>
+     <width>151</width>
+     <height>41</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">font-size: 20px;</string>
+   </property>
    <property name="text">
-    <string>Git Settings</string>
+    <string>Repo Settings</string>
    </property>
   </widget>
   <widget class="QTextBrowser" name="setShow">
