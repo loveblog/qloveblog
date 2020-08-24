@@ -16,7 +16,7 @@ make
 
 echo " >> Install"
 echo "    => Copy bin"
-cp ./QLoveblog /usr/bin/qloveblog
+cp ./QLoveBlog /usr/bin/qloveblog
 echo "    => Copy Desktop file"
 cp ./qloveblog.desktop /usr/share/applications
 echo "    => Copy dir"
