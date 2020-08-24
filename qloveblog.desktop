@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=QLoveBlog
+Exec=/usr/bin/qloveblog
+Terminal=false
+Type=Application
+Categories=Qt
+Comment=Love blog, love everyday!
+Comment[zh_CN]=热爱博客，热爱每一天！
+Comment[zh_TW]=熱愛博客，熱愛每一天！
+Icon=/usr/share/qloveblog/icon.png
