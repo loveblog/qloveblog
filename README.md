@@ -56,6 +56,7 @@ $ qloveblog
 ### Make blog with your server 使用自己的服务器创建博客
 
 - Creat a git repo on your server
+- Install `Jekyll` https://jekyllrb.com/
 
 ### Then you have to do with client 然后启动客户端
 
@@ -78,4 +79,21 @@ $ qloveblog
 
 ```lansh
 # bash /usr/share/qloveblog/uninstall.sh
+```
+
+# Beautify
+
+Edit File `~/.config/qloveblog/output/_config.yml`
+
+- theme: _THEME_ (GitHub Theme or https://jekyllthemes.io/)
+- title: "_TITLE_" (Blog Title)
+- description: "_DESCRIPTION_" (Blog Description)
+- ... (This site will help you https://jekyllrb.com/docs/configuration/)
+
+Like:
+
+```yaml
+theme: jekyll-theme-cayman
+title: "Love Blog Show"
+description: "My Love Blog"
 ```
